@@ -1,0 +1,1 @@
+!+s::Run, pythonw "lens-clicker.pyw"
