@@ -45,5 +45,8 @@ if len(candidates) > 0:
   targetl,targett,targetw,targeth = map((lambda x: int(x)), target[6:10])
   targetx,targety = targetl + (targetw / 2), targett + (targeth / 2)
 
+  # we save the last cursor position
+  last_mouse_position = pyautogui.position()
   pyautogui.moveTo(cropleft + targetx, croptop + targety)
   pyautogui.click()
+  pyautogui.moveTo(last_mouse_position.x, last_mouse_position.y)

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <body>
+    <style>
+      body {
+        margin: 0;
+      }
+      #pasteFrame > img {
+        width: 100%;
+      }
+    </style>
+    <div id="pasteFrame"></div>
+
+    <script>
+      window.addEventListener('keydown', e => {
+        if (e.ctrlKey && e.key === 'v') {
+          // Paste the image
+
+        }
+      })
+      document.onpaste = function (e) {
+        const items = e.clipboardData.items;
+        // console.log(JSON.stringify(items))
+        const blob = items[0].getAsFile();
+        const img = document.createElement('img')
+        img.src = URL.createObjectURL(blob)
+        // document.body.appendChild(img)
+        pasteFrame.innerHTML = img.outerHTML;
+        // console.log(blob)
+      }
+    </script>
+  </body>
+</html>
