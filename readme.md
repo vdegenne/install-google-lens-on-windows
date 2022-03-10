@@ -11,6 +11,10 @@ Basically here are the linear steps executed to get the intended result :
 - click on "Search images with Google Lens" item
 
 
+https://user-images.githubusercontent.com/2827383/157737266-a21e5599-cd98-4b86-b718-774974cb4369.mp4
+
+
+
 ## Installation
 
 - Install `Chrome`, `AutoHotKey`, `NodeJs` (with `npm`)
