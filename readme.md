@@ -11,9 +11,9 @@ Basically here are the linear steps executed to get the intended result :
 - click on "Search images with Google Lens" item
 
 
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=ouwWhsssS9g"><img src="https://img.youtube.com/vi/ouwWhsssS9g/0.jpg" alt="IMAGE ALT TEXT"></a>
-</div>
+https://user-images.githubusercontent.com/2827383/157737266-a21e5599-cd98-4b86-b718-774974cb4369.mp4
+
+
 
 ## Installation
 
