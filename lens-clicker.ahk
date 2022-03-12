@@ -5,17 +5,17 @@ Send,	{LWin Down}S{LWin Up}
 ; We wait for the screenshot to be cropped
 KeyWait, Lbutton, D
 KeyWait, Lbutton
+Sleep 100
 ; Open the server page in a new Chrome window
-Run, chrome.exe http://localhost:43191/ --new-window
+Run, chrome.exe http://localhost:43191/ --new-window,, Max, PID
 ; We Wait for the window to load completely
-WinWaitActive, localhost:43191
-WinMaximize
-WinWaitActive, localhost:43191
+;WinMaximize
+WinActivate, localhost:43191
 ; Get the position of the just opened Chrome window
 ;WinGetPos, X, Y, W, H, A
 ; Try to move the mouse to a blank space on the page (ideally the most top left corner)
 ; MODIFY THE NUMBERS DEPENDING ON YOUR SCREEN RESOLUTION
-MouseMove, 77, 100
+MouseMove, 77, 100, 15
 Send, ^v
 ;MouseGetPos, xpos, ypos
 ;MsgBox, %xpos%, %ypos%
