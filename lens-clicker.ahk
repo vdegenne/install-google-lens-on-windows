@@ -11,11 +11,13 @@ Run, chrome.exe http://localhost:43191/ --new-window,, Max, PID
 ; We Wait for the window to load completely
 ;WinMaximize
 WinActivate, localhost:43191
+; Wait the page to load completely (depends on your computer)
+Sleep 1000
 ; Get the position of the just opened Chrome window
 ;WinGetPos, X, Y, W, H, A
 ; Try to move the mouse to a blank space on the page (ideally the most top left corner)
 ; MODIFY THE NUMBERS DEPENDING ON YOUR SCREEN RESOLUTION
-MouseMove, 77, 100, 15
+MouseMove, 77, 100, 0
 Send, ^v
 ;MouseGetPos, xpos, ypos
 ;MsgBox, %xpos%, %ypos%
